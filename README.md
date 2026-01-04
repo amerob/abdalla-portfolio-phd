@@ -1,6 +1,6 @@
 # Abdullah Alkhatib, Ph.D.
 
-**Ph.D. Candidate in Electrical & Computer Engineering**  
+**Ph.D. in Electrical & Computer Engineering**  
 📍 Abu Dhabi, UAE  
 📧 abdkat@hotmail.com  
 
