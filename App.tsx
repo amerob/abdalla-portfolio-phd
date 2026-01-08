@@ -241,9 +241,10 @@ function App() {
                     Contact via Email
                 </a>
                 
-                <div className="mt-12 pt-8 border-t border-academic-700 text-sm text-academic-400">
-                    <p>&copy; {new Date().getFullYear()} {CONTACT_INFO.name}. All rights reserved.</p>
-                </div>
+<div className="mt-12 pt-8 border-t border-academic-700 text-sm text-academic-400">
+  <p>&copy; 2022 {CONTACT_INFO.name}. All rights reserved.</p>
+</div>
+
             </div>
         </footer>
       </main>
