@@ -7,17 +7,32 @@ interface SectionProps {
     className?: string;
 }
 
-export const Section: React.FC<SectionProps> = ({ id, title, children, className = "" }) => {
-    return (
-        <section id={id} className={`py-16 border-b border-gray-100 last:border-0 ${className}`}>
-            <div className="max-w-4xl mx-auto px-4 sm:px-6">
-                <h2 className="text-2xl font-serif font-bold text-academic-900 mb-8 border-l-4 border-academic-500 pl-4">
-                    {title}
-                </h2>
-                <div className="space-y-6">
-                    {children}
-                </div>
-            </div>
-        </section>
-    );
+export const Section: React.FC<SectionProps> = ({
+  id,
+  title,
+  children,
+  className = "",
+}) => {
+  return (
+    <section
+      id={id}
+      aria-labelledby={`${id}-title`}
+      className={`py-20 border-b border-gray-200 last:border-none ${className}`}
+    >
+      <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+        <header className="mb-10">
+          <h2
+            id={`${id}-title`}
+            className="pl-4 border-l-4 border-academic-600 text-3xl font-serif font-semibold text-academic-900"
+          >
+            {title}
+          </h2>
+        </header>
+
+        <div className="space-y-8 text-academic-800">
+          {children}
+        </div>
+      </div>
+    </section>
+  );
 };
